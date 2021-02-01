@@ -1,0 +1,210 @@
+
+
+
+/* h1 & h4 are the only tags applied for headline sizing in this document. */
+
+h1{
+    text-color: 8em black;
+}
+
+h4{
+    text-color: 3em black;
+    margin-bottom: -5px;
+}
+
+
+body{
+    background-color: #f9fafc;
+    font-family: 'Open Sans', sans-serif;
+    text-color: #69696a;
+}
+
+
+nav{
+    font-family: 'Open Sans', sans-serif;
+    color: #69696a;
+    margin-bottom: 10px;
+    margin-left: -15px;
+}
+
+
+/* This list is a block element and creates the "stacked" look of the list items. 
+The style type corresponds with the bullet points. "text-decoration" was ineffective here; that style type is best used for underline and strikethrough. */
+
+ul{
+    list-style-type: none;
+    margin-left: -20px;
+    color: #69696a;
+}
+
+#about{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+p{
+    color: #69696a;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 5px solid #69696a;
+    padding-bottom: auto;
+}
+
+
+.hire{
+    color: white;
+    text-align: center;
+}
+
+scroll{
+    text-align: center;
+}
+
+
+/* Border-radius was used to round the edges of the buttons. */
+
+button{
+    background-color:black;
+    width: 100%;
+    border-radius:25px;
+    padding: 10px;
+    margin: auto;
+    text-decoration: none;
+    font-family: 'Open Sans' , sans-serif;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* It's imperative to associate anchor tags with corresponding tags prior to anchor tag in stylesheet. This ensures that only the specified tag is adheres to any characteristics applied in CSS. 
+It is also important to order these correctly. Correct Order --> a:link, a:visited, a:hover, a:active */
+
+li a{
+    text-decoration: none;
+    font-family: 'Open Sans' , sans-serif;
+    color: #69696a;
+}
+    
+
+button a:visited{
+    color: #fff;
+}
+
+li a:visited{
+    color: #69696a;
+}
+
+
+/* desktop version*/
+@media only screen and (min-width: 768px){
+
+
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    h4{
+        display: inline;
+    }
+
+    main{
+        position: relative;
+    }
+
+    nav{
+        font-family: 'Open Sans', sans-serif;
+        color: #69696a;
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul{
+        list-style-type: none;
+        color: #69696a;
+        display: flex;
+
+    }
+
+    p{
+        color: #69696a;
+        margin-bottom: 15px;
+        padding-left: 15px;
+        border-left: 5px solid #69696a;
+        width: 50%;
+        padding-bottom: auto;
+    }
+
+    button{
+        background-color:black;
+        border-radius:25px;
+        text-decoration: none;
+        font-family: 'Open Sans' , sans-serif;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    li a{
+        text-decoration: none;
+        font-family: 'Open Sans' , sans-serif;
+        color: #69696a;
+        margin-right: 15px;
+    }
+        
+    
+    button a:visited{
+        color: #fff;
+    }
+    
+    li a:visited{
+        color: #69696a;
+    }
+
+    button.hire{
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    button.scroll{
+        position: absolute;
+        left: 50%;
+        top: 300%;
+        padding: 10px 25px;
+        width: auto;
+    }
+
+    #purpledot{
+        height: 130px;
+        width: 130px;
+        border-radius: 50%;
+        background-color: rgba(207, 130, 213, 0.6);
+        position: absolute;
+        left: 90%;
+        top: 80%;
+    }
+
+    #yellowdot{
+        height: 170px;
+        width: 170px;
+        border-radius: 50%;
+        background-color: rgba(247, 193, 162, 0.7);
+        position: absolute;
+        left: 85%;
+        top: 130%;
+        z-index: 1;
+    }
+
+    #reddot{
+        height: 250px;
+        width: 250px;
+        border-radius: 50%;
+        background-color: rgba(247, 136, 167, 0.6);
+        position: absolute;
+        left: 75%;
+        top: 40%;
+    }
+    
+
+}
